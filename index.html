@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#171522">
 
-<title>Join Our Dating Community</title>
-<meta name="description" content="Meet new people, make connections and join our dating community today.">
+<title>Join Dating Community</title>
+<meta name="description" content="Meet new people and make meaningful connections.">
 
 <style>
 * {
@@ -55,12 +54,6 @@ h1 {
   margin-bottom: 12px;
 }
 
-.subtitle {
-  color: #efa7c6;
-  font-size: 17px;
-  margin-bottom: 18px;
-}
-
 .description {
   color: #d0cad6;
   font-size: 15px;
@@ -68,23 +61,46 @@ h1 {
   margin-bottom: 26px;
 }
 
+.cta-group {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
 .cta {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
   width: 100%;
   padding: 17px;
   border-radius: 50px;
-  background: linear-gradient(135deg, #f35b9b, #d93679);
-  color: white;
+  background: #ffffff;
+  color: #171522;
   text-decoration: none;
   font-size: 17px;
   font-weight: bold;
   letter-spacing: 1px;
-  box-shadow: 0 6px 22px rgba(233,77,131,.3);
   transition: .2s;
+}
+
+.cta svg {
+  width: 23px;
+  height: 23px;
+  flex-shrink: 0;
+}
+
+.whatsapp svg {
+  color: #25D366;
+}
+
+.video svg {
+  color: #e94385;
 }
 
 .cta:active {
   transform: scale(.97);
+  background: #eee;
 }
 
 .note {
@@ -93,7 +109,6 @@ h1 {
   margin-top: 18px;
   line-height: 1.6;
 }
-
 </style>
 </head>
 
@@ -112,10 +127,24 @@ h1 {
       Join our group and become part of the community.
     </p>
 
-    <a class="cta"
-       href="https://track.chatvideocall.net/s/9a24608a59183?track=usb">
-       JOIN GROUP
-    </a>
+    <div class="cta-group">
+
+      <a class="cta whatsapp" href="https://wa.me/">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.2 1.7 6L.2 24l6.4-1.7a11.8 11.8 0 0 0 5.5 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.4ZM12.1 21.7c-1.7 0-3.5-.5-4.9-1.4l-.4-.2-3.8 1 1-3.7-.3-.4a9.8 9.8 0 0 1-1.5-5.2c0-5.5 4.5-9.9 10-9.9 2.6 0 5.1 1 7 2.9a9.8 9.8 0 0 1 2.9 7c0 5.4-4.5 9.9-10 9.9Zm5.5-7.4c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.4-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.6-.9-2.1-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.7 1.1 2.9c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.3-.6-.5Z"/>
+        </svg>
+        WHATSAPP
+      </a>
+
+      <a class="cta video"
+         href="https://track.chatvideocall.net/s/9a24608a59183?track=usb">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M8 5v14l11-7z"/>
+        </svg>
+        VIDEO
+      </a>
+
+    </div>
 
     <div class="note">
       Connect with people and enjoy the community.
