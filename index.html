@@ -7,7 +7,7 @@
 <meta name="theme-color" content="#17131c">
 
 <title>Let's Get to Know Each Other</title>
-<meta name="description" content="Sometimes a simple hello can lead to a beautiful connection.">
+<meta name="description" content="Meet new people and make meaningful connections.">
 
 <style>
 * {
@@ -85,32 +85,28 @@ h1 {
   width: 100%;
   min-height: 57px;
   border-radius: 50px;
+  background: #ffffff;
+  color: #17131c;
   text-decoration: none;
   font-size: 15px;
   font-weight: bold;
   letter-spacing: .7px;
   transition: .2s;
-}
-
-.primary {
-  background: linear-gradient(110deg, #f47ca7, #e84d87);
-  color: white;
-  box-shadow: 0 6px 20px rgba(232,77,135,.25);
-}
-
-.secondary {
-  background: #342b3a;
-  color: white;
-  border: 1px solid #574657;
-}
-
-.cta:active {
-  transform: scale(.97);
+  border: none;
 }
 
 .cta svg {
   width: 21px;
   height: 21px;
+  color: #17131c;
+}
+
+.cta:hover {
+  background: #eeeeee;
+}
+
+.cta:active {
+  transform: scale(.97);
 }
 
 .note {
@@ -131,7 +127,10 @@ h1 {
 @media (max-width: 360px) {
   .hero { height: 320px; }
   h1 { font-size: 25px; }
-  .content { padding-left: 20px; padding-right: 20px; }
+  .content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 </style>
 </head>
