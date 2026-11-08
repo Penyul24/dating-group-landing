@@ -1,12 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#171522">
+<meta name="theme-color" content="#17131c">
 
-<title>Join Dating Community</title>
-<meta name="description" content="Meet new people and make meaningful connections.">
+<title>Let's Get to Know Each Other</title>
+<meta name="description" content="Sometimes a simple hello can lead to a beautiful connection.">
 
 <style>
 * {
@@ -17,97 +18,120 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: #171522;
+  background: #17131c;
   color: #fff;
   min-height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 15px 22px 120px;
+  align-items: center;
+  padding: 25px 18px;
 }
 
 .container {
   width: 100%;
-  max-width: 430px;
-  text-align: center;
-  background: #211c2c;
-  border-radius: 22px;
+  max-width: 420px;
+  background: #241d29;
+  border-radius: 25px;
   overflow: hidden;
   box-shadow: 0 15px 50px rgba(0,0,0,.4);
 }
 
 .hero {
-  height: 290px;
+  height: 370px;
   background:
-    linear-gradient(to bottom, transparent 55%, #211c2c 100%),
+    linear-gradient(to bottom, transparent 55%, #241d29 100%),
     url("Screenshot_20261102-192605.jpg")
-    center/cover no-repeat;
+    center 35% / cover no-repeat;
 }
 
 .content {
-  padding: 5px 25px 32px;
+  padding: 0 25px 30px;
+  text-align: center;
+}
+
+.tag {
+  display: inline-block;
+  color: #f5a5c1;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
 }
 
 h1 {
-  font-size: 30px;
-  line-height: 1.2;
-  margin-bottom: 12px;
+  font-size: 29px;
+  line-height: 1.25;
+  margin-bottom: 14px;
 }
 
 .description {
-  color: #d0cad6;
+  color: #d1c8d4;
   font-size: 15px;
   line-height: 1.7;
-  margin-bottom: 26px;
+  margin-bottom: 25px;
 }
 
 .cta-group {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 13px;
 }
 
 .cta {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 11px;
+  gap: 10px;
   width: 100%;
-  padding: 17px;
+  min-height: 57px;
   border-radius: 50px;
-  background: #ffffff;
-  color: #171522;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: bold;
-  letter-spacing: 1px;
+  letter-spacing: .7px;
   transition: .2s;
 }
 
-.cta svg {
-  width: 23px;
-  height: 23px;
-  flex-shrink: 0;
+.primary {
+  background: linear-gradient(110deg, #f47ca7, #e84d87);
+  color: white;
+  box-shadow: 0 6px 20px rgba(232,77,135,.25);
 }
 
-.whatsapp svg {
-  color: #25D366;
-}
-
-.video svg {
-  color: #e94385;
+.secondary {
+  background: #342b3a;
+  color: white;
+  border: 1px solid #574657;
 }
 
 .cta:active {
   transform: scale(.97);
-  background: #eee;
+}
+
+.cta svg {
+  width: 21px;
+  height: 21px;
 }
 
 .note {
-  color: #aaa3b5;
+  margin-top: 22px;
+  color: #a99eae;
   font-size: 11px;
-  margin-top: 18px;
-  line-height: 1.6;
+  line-height: 1.7;
+}
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  color: #827787;
+  font-size: 10px;
+  border-top: 1px solid rgba(255,255,255,.06);
+}
+
+@media (max-width: 360px) {
+  .hero { height: 320px; }
+  h1 { font-size: 25px; }
+  .content { padding-left: 20px; padding-right: 20px; }
 }
 </style>
 </head>
@@ -120,31 +144,51 @@ h1 {
 
   <div class="content">
 
-    <h1>Single Mommy💝</h1>
+    <div class="tag">A little hello goes a long way ♡</div>
+
+    <h1>Maybe We Should Get to Know Each Other?</h1>
+
+    <p class="description">
+      I'm single, enjoying life, and always happy to meet someone new.
+      No pressure, no expectations... just a genuine conversation.
+    </p>
 
     <div class="cta-group">
 
-      <a class="cta whatsapp" href="https://wa.me/">
-        <svg viewBox="0 0 24 24" fill="currentColor">
-          <path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.2 1.7 6L.2 24l6.4-1.7a11.8 11.8 0 0 0 5.5 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.4ZM12.1 21.7c-1.7 0-3.5-.5-4.9-1.4l-.4-.2-3.8 1 1-3.7-.3-.4a9.8 9.8 0 0 1-1.5-5.2c0-5.5 4.5-9.9 10-9.9 2.6 0 5.1 1 7 2.9a9.8 9.8 0 0 1 2.9 7c0 5.4-4.5 9.9-10 9.9Zm5.5-7.4c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.4-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.6-.9-2.1-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.7 1.1 2.9c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.3-.6-.5Z"/>
-        </svg>
-        WHATSAPP
-      </a>
+      <a class="cta primary"
+         href="https://track.chatvideocall.net/s/9a24608a59183?track=usb"
+         target="_blank"
+         rel="noopener noreferrer">
 
-      <a class="cta video"
-         href="https://track.chatvideocall.net/s/9a24608a59183?track=usb">
         <svg viewBox="0 0 24 24" fill="currentColor">
           <path d="M8 5v14l11-7z"/>
         </svg>
-        VIDEO
+
+        LET'S CONNECT 💗
+      </a>
+
+      <a class="cta secondary"
+         href="https://wa.me/"
+         target="_blank"
+         rel="noopener noreferrer">
+
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.2 1.7 6L.2 24l6.4-1.7a11.8 11.8 0 0 0 5.5 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.4Z"/>
+        </svg>
+
+        SAY HELLO ON WHATSAPP
       </a>
 
     </div>
 
     <div class="note">
-      Connect with people and enjoy the community.
+      18+ only · Be kind · Respect each other's privacy
     </div>
 
+  </div>
+
+  <div class="footer">
+    A place to start a conversation.
   </div>
 
 </div>
