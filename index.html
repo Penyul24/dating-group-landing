@@ -4,10 +4,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#171522">
+<meta name="theme-color" content="#f8c6df">
 
 <title>Single Mom</title>
-<meta name="description" content="Single Mom">
 
 <style>
 * {
@@ -16,61 +15,65 @@
   box-sizing: border-box;
 }
 
+html, body {
+  width: 100%;
+  min-height: 100%;
+}
+
 body {
   font-family: Arial, sans-serif;
-  background: #171522;
-  color: #fff;
-  min-height: 100vh;
+  background: #f8c6df;
+  color: #30212b;
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 15px 22px 120px;
+  align-items: center;
+  padding: 20px;
 }
 
 .container {
   width: 100%;
   max-width: 430px;
+  aspect-ratio: 9 / 16;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
   text-align: center;
-  background: #211c2c;
-  border-radius: 22px;
-  overflow: hidden;
-  box-shadow: 0 15px 50px rgba(0,0,0,.4);
 }
 
-.hero {
-  height: 290px;
-  background:
-    linear-gradient(to bottom, transparent 55%, #211c2c 100%),
-    url("Screenshot_20261102-192605.jpg")
-    center/cover no-repeat;
-}
-
-.content {
-  padding: 5px 25px 32px;
-}
-
-h1 {
-  font-size: 30px;
-  line-height: 1.2;
+.profile {
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+  object-fit: cover;
   margin-bottom: 25px;
 }
 
+h1 {
+  font-size: 32px;
+  margin-bottom: 35px;
+  font-weight: bold;
+}
+
 .cta-group {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 16px;
 }
 
 .cta {
+  width: 100%;
+  min-height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 11px;
-  width: 100%;
-  padding: 17px;
+  gap: 12px;
+  background: #fff;
+  color: #17131c;
   border-radius: 50px;
-  background: #ffffff;
-  color: #171522;
   text-decoration: none;
   font-size: 17px;
   font-weight: bold;
@@ -81,15 +84,21 @@ h1 {
 .cta svg {
   width: 23px;
   height: 23px;
-  flex-shrink: 0;
-  color: #171522;
 }
 
 .cta:active {
   transform: scale(.97);
-  background: #eee;
 }
 
+@media (max-height: 650px) {
+  .profile {
+    width: 110px;
+    height: 110px;
+  }
+  h1 {
+    margin-bottom: 22px;
+  }
+}
 </style>
 </head>
 
@@ -97,30 +106,30 @@ h1 {
 
 <div class="container">
 
-  <div class="hero"></div>
+  <img
+    class="profile"
+    src="Screenshot_20261102-192605.jpg"
+    alt="Profile"
+  >
 
-  <div class="content">
+  <h1>Single Mom</h1>
 
-    <h1>Single Mom</h1>
+  <div class="cta-group">
 
-    <div class="cta-group">
+    <a class="cta" href="https://wa.me/">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.2 1.7 6L.2 24l6.4-1.7 5.5 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.4Z"/>
+      </svg>
+      WHATSAPP
+    </a>
 
-      <a class="cta whatsapp" href="https://wa.me/">
-        <svg viewBox="0 0 24 24" fill="currentColor">
-          <path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.2 1.7 6L.2 24l6.4-1.7a11.8 11.8 0 0 0 5.5 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.1-3.5-8.4ZM12.1 21.7c-1.7 0-3.5-.5-4.9-1.4l-.4-.2-3.8 1 1-3.7-.3-.4a9.8 9.8 0 0 1-1.5-5.2c0-5.5 4.5-9.9 10-9.9 2.6 0 5.1 1 7 2.9a9.8 9.8 0 0 1 2.9 7c0 5.4-4.5 9.9-10 9.9Z"/>
-        </svg>
-        WHATSAPP
-      </a>
-
-      <a class="cta video"
-         href="https://track.chatvideocall.net/s/9a24608a59183?track=usb">
-        <svg viewBox="0 0 24 24" fill="currentColor">
-          <path d="M8 5v14l11-7z"/>
-        </svg>
-        VIDEO
-      </a>
-
-    </div>
+    <a class="cta"
+       href="https://track.chatvideocall.net/s/9a24608a59183?track=usb">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M8 5v14l11-7z"/>
+      </svg>
+      VIDEO
+    </a>
 
   </div>
 
